@@ -11,7 +11,7 @@ export function Hero () {
     "Asfalto",
     "Cemento",
   ];
-  
+
   const currentSurface = useRotatingtext(surfaceOptions, 2500);
 
   return (
@@ -34,8 +34,10 @@ export function Hero () {
         </p>
 
         <div className="mt-10">
-          <a 
-            href="" 
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://pay.hotmart.com/Q107066648L" 
             className="cta-glow group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-bg font-bold text-base rounded-md hover:scale-[1.02] transition-transform"
           >
             ¡QUIERO MI GUÍA + BONO DE REGALO!
