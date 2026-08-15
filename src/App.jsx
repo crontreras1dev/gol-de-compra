@@ -1,5 +1,6 @@
-import { Hero } from "./components/Hero"
-import { Layout } from "./layouts/Layout"
+import { Hero } from "./components/Hero";
+import { Solution } from "./components/Solution";
+import { Layout } from "./layouts/Layout";
 
 // src/App.jsx
 // import { useState, useEffect } from 'react'
@@ -37,19 +38,19 @@ import {
 /* ─────────────────────────────────────────────
    Placeholder dashed — política estricta de imágenes
 ───────────────────────────────────────────── */
-// function Placeholder({ w, h, label, className = '' }) {
-//   return (
-//     <div
-//       className={`border-2 border-dashed border-zinc-700 bg-zinc-900/40 rounded-xl flex flex-col items-center justify-center p-6 text-zinc-500 ${className}`}
-//       style={{ aspectRatio: `${w} / ${h}` }}
-//     >
-//       <div className="text-[10px] uppercase tracking-widest text-zinc-600 mb-2 font-mono">
-//         {w} × {h}px
-//       </div>
-//       <div className="text-sm text-center leading-snug max-w-[80%]">{label}</div>
-//     </div>
-//   )
-// }
+function Placeholder({ w, h, label, className = '' }) {
+  return (
+    <div
+      className={`border-2 border-dashed border-zinc-700 bg-zinc-900/40 rounded-xl flex flex-col items-center justify-center p-6 text-zinc-500 ${className}`}
+      style={{ aspectRatio: `${w} / ${h}` }}
+    >
+      <div className="text-[10px] uppercase tracking-widest text-zinc-600 mb-2 font-mono">
+        {w} × {h}px
+      </div>
+      <div className="text-sm text-center leading-snug max-w-[80%]">{label}</div>
+    </div>
+  )
+}
 
 /* ─────────────────────────────────────────────
    FAQ Accordion item
@@ -95,7 +96,7 @@ export default function App() {
     <>
     <Layout>
       <Hero />
-
+      <Solution />
     </Layout>
 
     {/* <div className="min-h-screen bg-bg text-main-text font-sans antialiased"> */}
@@ -109,75 +110,6 @@ export default function App() {
         </div>
       </div> */}
 
-      {/* ── HERO ────────────────────────────────── */}
-      {/* <section className="border-b border-border relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 py-14 md:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
-
-            <div className="lg:col-span-7">
-              <div className="flex items-center gap-3 mb-7">
-                <span className="font-mono text-xs text-zinc-500">01 / Guía</span>
-                <span className="h-px w-12 bg-border"></span>
-                <span className="text-xs text-zinc-500">Edición 2025 · 47 páginas</span>
-              </div>
-
-              <h1 className="font-display text-4xl md:text-5xl lg:text-[3.4rem] font-bold leading-[1.04] tracking-tight">
-                Juega sin dolor de rodilla ni lesiones:
-                <br />
-                <span className="text-zinc-400 font-normal">Elige las botas correctas para</span>{' '}
-                <span className="text-primary">cancha sintética.</span>
-              </h1>
-
-              <p className="mt-7 text-lg text-zinc-300 leading-relaxed max-w-xl">
-                La guía práctica de biomecánica y suelas para futbolistas amateurs.
-                Evita rupturas de ligamentos (LCA), cuida tus articulaciones y no tires tu dinero.
-              </p>
-
-              <div className="mt-8 space-y-3 max-w-lg">
-                {[
-                  'Evita el "cleat lock" que destruye rodillas los fines de semana',
-                  'Ahorra en gamas innecesarias: el punto dulce cuesta $80–$160 USD'
-                ].map((t, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></div>
-                    <span className="text-zinc-200 leading-relaxed">{t}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-10">
-                <a
-                  href="#oferta"
-                  className="cta-glow group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-bg font-bold text-base rounded-md hover:scale-[1.02] transition-transform"
-                >
-                  ¡QUIERO MI GUÍA + BONO GRATIS!
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </a>
-                <div className="mt-4 flex items-center gap-2 text-xs text-zinc-500">
-                  <Lock className="w-3.5 h-3.5" />
-                  <span>Pago 100% Seguro • Acceso Inmediato</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-5 relative">
-              <Placeholder
-                w={600}
-                h={600}
-                label="Mockup 3D Ebook 'Gol de Compra' + Bono Calentamiento"
-              />
-              <div className="absolute top-5 right-5 bg-primary text-bg px-3 py-1.5 text-xs font-bold rounded-md shadow-lg">
-                + BONO GRATIS
-              </div>
-              <div className="absolute bottom-5 left-5 bg-card border border-border px-3 py-2 text-xs rounded-md">
-                <span className="text-zinc-400">PDF interactivo</span>
-                <span className="text-zinc-300 ml-1">· 47pp + 8pp bono</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section> */}
 
       {/* ── PROBLEM ─────────────────────────────── */}
       {/* <section className="border-b border-border py-16 md:py-24">
@@ -230,56 +162,6 @@ export default function App() {
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   En la liga del fin de semana no hay cuerpo médico cuidándote. Tu única defensa es tu calzado.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* ── SOLUTION ────────────────────────────── */}
-      {/* <section className="border-b border-border py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="font-mono text-xs text-zinc-500">03 / La solución</span>
-            <span className="h-px w-12 bg-border"></span>
-          </div>
-
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight max-w-3xl mb-12">
-            Presentando <span className="text-primary italic font-normal">"Gol de Compra"</span>:
-            tu estrategia inteligente de calzado.
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <Placeholder
-                w={800}
-                h={500}
-                label="Demostración comparativa de suelas: AG vs TF vs FG"
-              />
-            </div>
-            <div>
-              <p className="text-lg text-zinc-300 leading-relaxed mb-6">
-                Esta guía descompone la <span className="text-main-text font-medium">biomecánica</span>,
-                la <span className="text-main-text font-medium">geometría de los tacos</span> y los{' '}
-                <span className="text-main-text font-medium">materiales de la capellada</span> en
-                español simple, sin tecnicismos.
-              </p>
-              <p className="text-zinc-400 leading-relaxed mb-8">
-                Nada de marketing de marcas. Solo datos: qué suela usar en sintético 3G/4G,
-                qué gamas valen lo que cuestan, y qué evitar aunque tu ídolo lo use.
-              </p>
-
-              <div className="space-y-4 border-t border-border pt-6">
-                {[
-                  'Biomecánica traducida a decisiones de compra',
-                  'Comparativas visuales de suelas por superficie',
-                  'Checklist de compra por tipo de pie y posición'
-                ].map((t, i) => (
-                  <div key={i} className="flex items-center gap-4">
-                    <span className="font-mono text-xs text-primary">0{i + 1}</span>
-                    <span className="text-zinc-300 text-sm">{t}</span>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
