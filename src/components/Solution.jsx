@@ -1,9 +1,13 @@
 import suelas from "../assets/suelas.png";
 
 const characteristics = [
-  'Biomecánica traducida a decisiones de compra',
+  // 'Biomecánica traducida a decisiones de compra',
   'Comparativas visuales de suelas por superficie',
-  'Prevensión de lesiones'
+  'Prevensión de lesiones', 
+  'Tipos de tacos',
+  'Materiales de la capellada',
+  'Tipos de campo de juego',
+  'En donde gastar y en donde NO y cuanto'
 ];
 
 export function Solution () {

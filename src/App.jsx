@@ -1,6 +1,8 @@
 import { Hero } from "./components/Hero";
 import { Solution } from "./components/Solution";
+import { TestimonialCard } from "./components/TestimonialCard";
 import { Layout } from "./layouts/Layout";
+// import { testimonials } from "./data/testimonials";
 
 // src/App.jsx
 // import { useState, useEffect } from 'react'
@@ -233,8 +235,8 @@ export default function App() {
       </section> */}
 
       {/* ── TESTIMONIALS ────────────────────────── */}
-      {/* <section className="border-b border-border py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="border-b border-border py-16 md:py-24">
+        {/* <div className="max-w-7xl mx-auto px-4"> */}
           <div className="flex items-center gap-3 mb-6">
             <span className="font-mono text-xs text-zinc-500">05 / Voces reales</span>
             <span className="h-px w-12 bg-border"></span>
@@ -245,48 +247,13 @@ export default function App() {
           </h2>
 
           <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-5">
-            <div className="bg-card border border-border rounded-xl p-7 md:p-8 flex flex-col">
-              <div className="flex items-center gap-1 mb-5">
-                {[1, 2, 3, 4, 5].map(i => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-lg text-zinc-200 leading-relaxed mb-6">
-                "Cambié mis tacos FG por unos AG tras leer la guía. El dolor de rodilla desapareció
-                en dos semanas."
-              </p>
-              <div className="mt-auto flex items-center gap-3 pt-5 border-t border-border">
-                <div className="w-12 h-12 rounded-full border-2 border-dashed border-zinc-700 bg-zinc-900/50 flex items-center justify-center text-[9px] text-zinc-600 font-mono">
-                  80×80
-                </div>
-                <div>
-                  <div className="font-medium text-main-text">Carlos M.</div>
-                  <div className="text-xs text-zinc-500">Fútbol 7 · Madrid</div>
-                </div>
-              </div>
-            </div>
+            {/* {
+              testimonials.map(testimonial => (
+                <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+              ))
+            } */}
 
             <div className="bg-card border border-border rounded-xl p-7 md:p-8 flex flex-col">
-              <div className="flex items-center gap-1 mb-5">
-                {[1, 2, 3, 4, 5].map(i => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-lg text-zinc-200 leading-relaxed mb-6">
-                "Iba a gastar $220 USD en unas botas Elite. Terminé comprando una gama Pro ideal
-                para mi pie por $110. Me ahorré la mitad."
-              </p>
-              <div className="mt-auto flex items-center gap-3 pt-5 border-t border-border">
-                <div className="w-12 h-12 rounded-full border-2 border-dashed border-zinc-700 bg-zinc-900/50 flex items-center justify-center text-[9px] text-zinc-600 font-mono">
-                  80×80
-                </div>
-                <div>
-                  <div className="font-medium text-main-text">Andrés R.</div>
-                  <div className="text-xs text-zinc-500">Liga Amateur · Bogotá</div>
-                </div>
-              </div>
-            </div>
-
             <div className="lg:col-span-2 bg-card border border-border rounded-xl p-7 md:p-8">
               <div className="flex items-center gap-2 mb-4">
                 <Quote className="w-4 h-4 text-secondary" />
@@ -302,7 +269,7 @@ export default function App() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* ── OFFER ───────────────────────────────── */}
       {/* <section id="oferta" className="border-b border-border py-16 md:py-24 scroll-mt-12">
