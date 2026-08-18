@@ -2,6 +2,7 @@ import { Hero } from "./components/Hero";
 import { Solution } from "./components/Solution";
 import { TestimonialCard } from "./components/TestimonialCard";
 import { Layout } from "./layouts/Layout";
+import { Testimonials } from "./components/Testimonials";
 // import { testimonials } from "./data/testimonials";
 
 // src/App.jsx
@@ -99,6 +100,7 @@ export default function App() {
     <Layout>
       <Hero />
       <Solution />
+      <Testimonials />
     </Layout>
 
     {/* <div className="min-h-screen bg-bg text-main-text font-sans antialiased"> */}
