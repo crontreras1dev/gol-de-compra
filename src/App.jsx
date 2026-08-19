@@ -3,7 +3,7 @@ import { Solution } from "./components/Solution";
 import { TestimonialCard } from "./components/TestimonialCard";
 import { Layout } from "./layouts/Layout";
 import { Testimonials } from "./components/Testimonials";
-// import { testimonials } from "./data/testimonials";
+import { testimonials } from "./data/testimonials";
 
 // src/App.jsx
 // import { useState, useEffect } from 'react'
@@ -100,7 +100,7 @@ export default function App() {
     <Layout>
       <Hero />
       <Solution />
-      <Testimonials />
+      <Testimonials testimonials={ testimonials } />
     </Layout>
 
     {/* <div className="min-h-screen bg-bg text-main-text font-sans antialiased"> */}
@@ -235,43 +235,6 @@ export default function App() {
           </div>
         </div>
       </section> */}
-
-      {/* ── TESTIMONIALS ────────────────────────── */}
-      <section className="border-b border-border py-16 md:py-24">
-        {/* <div className="max-w-7xl mx-auto px-4"> */}
-          <div className="flex items-center gap-3 mb-6">
-            <span className="font-mono text-xs text-zinc-500">05 / Voces reales</span>
-            <span className="h-px w-12 bg-border"></span>
-          </div>
-
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight max-w-3xl">
-            Lo que dicen otros jugadores de fin de semana.
-          </h2>
-
-          <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-5">
-            {/* {
-              testimonials.map(testimonial => (
-                <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-              ))
-            } */}
-
-            <div className="bg-card border border-border rounded-xl p-7 md:p-8 flex flex-col">
-            <div className="lg:col-span-2 bg-card border border-border rounded-xl p-7 md:p-8">
-              <div className="flex items-center gap-2 mb-4">
-                <Quote className="w-4 h-4 text-secondary" />
-                <span className="font-mono text-xs uppercase tracking-wider text-zinc-500">
-                  Captura de WhatsApp
-                </span>
-              </div>
-              <Placeholder
-                w={400}
-                h={250}
-                label="Captura de reseña / testimonio por WhatsApp"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── OFFER ───────────────────────────────── */}
       {/* <section id="oferta" className="border-b border-border py-16 md:py-24 scroll-mt-12">
