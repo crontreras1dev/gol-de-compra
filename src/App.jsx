@@ -1,9 +1,11 @@
+import { useState, useEffect } from 'react'
 import { Hero } from "./components/Hero";
 import { Solution } from "./components/Solution";
 import { TestimonialCard } from "./components/TestimonialCard";
 import { Layout } from "./layouts/Layout";
 import { Testimonials } from "./components/Testimonials";
 import { testimonials } from "./data/testimonials";
+import { faqs } from './data/faqs';
 
 // src/App.jsx
 // import { useState, useEffect } from 'react'
@@ -13,6 +15,7 @@ import {
   DollarSign, ShieldAlert, ArrowRight, Quote, Timer,
   BookOpen
 } from 'lucide-react'
+import { Faqs } from './components/Faqs';
 
 /* ─────────────────────────────────────────────
    Countdown — empiece en 14:59 como pide el brief
@@ -58,25 +61,25 @@ function Placeholder({ w, h, label, className = '' }) {
 /* ─────────────────────────────────────────────
    FAQ Accordion item
 ───────────────────────────────────────────── */
-// function FAQItem({ q, a, defaultOpen = false }) {
-//   const [open, setOpen] = useState(defaultOpen)
-//   return (
-//     <div className="border-b border-border">
-//       <button
-//         onClick={() => setOpen(o => !o)}
-//         className="w-full flex items-center justify-between py-5 text-left gap-4"
-//       >
-//         <span className="text-base md:text-lg font-medium text-main-text">{q}</span>
-//         <ChevronDown
-//           className={`w-5 h-5 text-zinc-400 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
-//         />
-//       </button>
-//       <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-96 pb-6' : 'max-h-0'}`}>
-//         <p className="text-zinc-400 leading-relaxed">{a}</p>
-//       </div>
-//     </div>
-//   )
-// }
+function FAQItem({ q, a, defaultOpen = false }) {
+  const [open, setOpen] = useState(defaultOpen)
+  return (
+    <div className="border-b border-border">
+      <button
+        onClick={() => setOpen(o => !o)}
+        className="w-full flex items-center justify-between py-5 text-left gap-4"
+      >
+        <span className="text-base md:text-lg font-medium text-main-text">{q}</span>
+        <ChevronDown
+          className={`w-5 h-5 text-zinc-400 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+        />
+      </button>
+      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-96 pb-6' : 'max-h-0'}`}>
+        <p className="text-zinc-400 leading-relaxed">{a}</p>
+      </div>
+    </div>
+  )
+}
 
 /* ─────────────────────────────────────────────
    App
@@ -101,6 +104,7 @@ export default function App() {
       <Hero />
       <Solution />
       <Testimonials testimonials={ testimonials } />
+      <Faqs faqs={ faqs } />
     </Layout>
 
     {/* <div className="min-h-screen bg-bg text-main-text font-sans antialiased"> */}
@@ -342,40 +346,6 @@ export default function App() {
             Prueba la guía, aplica los consejos y si sientes que no protegió tus piernas ni te ayudó
             a ahorrar dinero, te devolvemos el 100% de tu inversión sin preguntas.
           </p>
-        </div>
-      </section> */}
-
-      {/* ── FAQ ─────────────────────────────────── */}
-      {/* <section className="border-b border-border py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="font-mono text-xs text-zinc-500">07 / Dudas frecuentes</span>
-            <span className="h-px w-12 bg-border"></span>
-          </div>
-
-          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-10">
-            Antes de comprar, lee esto.
-          </h2>
-
-          <div>
-            <FAQItem
-              q="¿Cómo recibo el libro y el bono?"
-              a="Acceso inmediato a tu correo en formato PDF interactivo. Después del pago, Hotmart te envía el enlace de descarga en menos de 60 segundos."
-              defaultOpen={true}
-            />
-            <FAQItem
-              q="¿Sirve si solo juego 1 vez por semana?"
-              a="Es donde más sirve: el jugador ocasional tiene mayor riesgo de lesión porque sus articulaciones no están preparadas para impactos esporádicos. La guía está pensada precisamente para ese perfil."
-            />
-            <FAQItem
-              q="¿Qué métodos de pago aceptan?"
-              a="Tarjeta de crédito, débito, PayPal y pago en efectivo según tu país vía Hotmart. El procesamiento es seguro y encriptado."
-            />
-            <FAQItem
-              q="¿El bono viene incluido o se compra aparte?"
-              a="El bono de Calentamiento en 5 Minutos viene incluido sin costo adicional durante la oferta de lanzamiento. Después del lanzamiento se venderá por separado a $15.00 USD."
-            />
-          </div>
         </div>
       </section> */}
 
