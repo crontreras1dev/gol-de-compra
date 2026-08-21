@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react'
+
+import { Layout } from "./layouts/Layout";
+
 import { Hero } from "./components/Hero";
 import { Solution } from "./components/Solution";
 import { TestimonialCard } from "./components/TestimonialCard";
-import { Layout } from "./layouts/Layout";
 import { Testimonials } from "./components/Testimonials";
+import { Benefits } from './components/Benefits';
+
 import { testimonials } from "./data/testimonials";
 import { faqs } from './data/faqs';
 
@@ -59,29 +63,6 @@ function Placeholder({ w, h, label, className = '' }) {
 }
 
 /* ─────────────────────────────────────────────
-   FAQ Accordion item
-───────────────────────────────────────────── */
-function FAQItem({ q, a, defaultOpen = false }) {
-  const [open, setOpen] = useState(defaultOpen)
-  return (
-    <div className="border-b border-border">
-      <button
-        onClick={() => setOpen(o => !o)}
-        className="w-full flex items-center justify-between py-5 text-left gap-4"
-      >
-        <span className="text-base md:text-lg font-medium text-main-text">{q}</span>
-        <ChevronDown
-          className={`w-5 h-5 text-zinc-400 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
-        />
-      </button>
-      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-96 pb-6' : 'max-h-0'}`}>
-        <p className="text-zinc-400 leading-relaxed">{a}</p>
-      </div>
-    </div>
-  )
-}
-
-/* ─────────────────────────────────────────────
    App
 ───────────────────────────────────────────── */
 export default function App() {
@@ -103,6 +84,7 @@ export default function App() {
     <Layout>
       <Hero />
       <Solution />
+      <Benefits />
       <Testimonials testimonials={ testimonials } />
       <Faqs faqs={ faqs } />
     </Layout>
@@ -350,8 +332,8 @@ export default function App() {
       </section> */}
 
       {/* ── FOOTER ──────────────────────────────── */}
-      <footer className="py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      {/* <footer className="py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-4 text-center"> */}
           {/* <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Asegura tu copia por <span className="text-primary">$9.99 USD</span>.
           </h2>
@@ -366,11 +348,11 @@ export default function App() {
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </a> */}
 
-          <div className="mt-16 pt-8 border-t border-border text-xs text-zinc-600 space-y-3">
+          {/* <div className="mt-16 pt-8 border-t border-border text-xs text-zinc-600 space-y-3">
             <div className="flex items-center justify-center gap-2">
               <Lock className="w-3 h-3" />
               <span>Pago procesado de forma segura por Hotmart</span>
-            </div>
+            </div> */}
             {/* <div className="flex items-center justify-center gap-4 flex-wrap">
               <a href="#" className="hover:text-zinc-400 transition-colors">Política de Privacidad</a>
               <span className="text-zinc-700">·</span>
@@ -378,7 +360,7 @@ export default function App() {
               <span className="text-zinc-700">·</span>
               <a href="#" className="hover:text-zinc-400 transition-colors">Soporte</a>
             </div> */}
-            <div className="pt-3 max-w-2xl mx-auto leading-relaxed">
+            {/* <div className="pt-3 max-w-2xl mx-auto leading-relaxed">
               © 2026 Gol de Compra. Todos los derechos reservados. Esta guía no sustituye consejo
               médico profesional. Consulta a tu médico antes de iniciar cualquier actividad física
               si tienes lesiones previas. Hotmart es el procesador de pagos seguro; no almacena ni
@@ -386,7 +368,7 @@ export default function App() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
 
       {/* ── Sticky CTA ─────────────────────────── */}
       {/* {showSticky && (
