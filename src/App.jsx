@@ -22,6 +22,8 @@ import {
 import { Faqs } from './components/Faqs';
 import { Bono } from './components/Bono';
 import { Footer } from './components/Footer';
+import { FinalCta } from './components/FinalCta';
+import { Guarantee } from './components/Guarantee';
 
 /* ─────────────────────────────────────────────
    Countdown — empiece en 14:59 como pide el brief
@@ -89,7 +91,9 @@ export default function App() {
       <Benefits />
       <Testimonials testimonials={ testimonials } />
       <Bono />
+      <Guarantee />
       <Faqs faqs={ faqs } />
+      {/* <FinalCta /> */}
       <Footer />
     </Layout>
 
@@ -334,45 +338,6 @@ export default function App() {
           </p>
         </div>
       </section> */}
-
-      {/* ── FOOTER ──────────────────────────────── */}
-      {/* <footer className="py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Asegura tu copia por <span className="text-primary">$9.99 USD</span>.
-          </h2>
-          <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-            El precio sube a $29.99 USD cuando termine el contador. Sin avisos previos.
-          </p>
-          <a
-            href="#oferta"
-            className="cta-glow group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-bg font-bold text-base rounded-md hover:scale-[1.02] transition-transform"
-          >
-            ¡HAZ CLIC AQUÍ PARA ASEGURAR TU COPIA!
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a>
-
-          <div className="mt-16 pt-8 border-t border-border text-xs text-zinc-600 space-y-3">
-            <div className="flex items-center justify-center gap-2">
-              <Lock className="w-3 h-3" />
-              <span>Pago procesado de forma segura por Hotmart</span>
-            </div>
-            <div className="flex items-center justify-center gap-4 flex-wrap">
-              <a href="#" className="hover:text-zinc-400 transition-colors">Política de Privacidad</a>
-              <span className="text-zinc-700">·</span>
-              <a href="#" className="hover:text-zinc-400 transition-colors">Términos de Servicio</a>
-              <span className="text-zinc-700">·</span>
-              <a href="#" className="hover:text-zinc-400 transition-colors">Soporte</a>
-            </div>
-            <div className="pt-3 max-w-2xl mx-auto leading-relaxed">
-              © 2026 Gol de Compra. Todos los derechos reservados. Esta guía no sustituye consejo
-              médico profesional. Consulta a tu médico antes de iniciar cualquier actividad física
-              si tienes lesiones previas. Hotmart es el procesador de pagos seguro; no almacena ni
-              comparte tus datos financieros con el vendedor.
-            </div>
-          </div>
-        </div>
-      </footer> */}
 
       {/* ── Sticky CTA ─────────────────────────── */}
       {/* {showSticky && (

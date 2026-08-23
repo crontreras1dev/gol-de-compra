@@ -1,10 +1,13 @@
+import { Lock } from 'lucide-react';
+
 export function Footer () {
   return (
     <footer className="py-16 md:py-20">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="mt-16 pt-8 border-t border-border text-xs text-zinc-600 space-y-3">
           <div className="flex items-center justify-center gap-2">
-            {/* <Lock className="w-3 h-3" /> */}
+            <Lock className="w-3 h-3" />
+
             <span>Pago procesado de forma segura por Hotmart</span>
           </div>
 
@@ -16,8 +19,7 @@ export function Footer () {
           </div>
 
           <p className="text-stress-text">
-            Made with 💙 by {''}
-            
+            Made with 💙 by {''}            
             <a 
               href="https://freelanceweb.work" 
               target="_blank" 
