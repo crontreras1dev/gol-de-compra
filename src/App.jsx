@@ -21,6 +21,7 @@ import {
 } from 'lucide-react'
 import { Faqs } from './components/Faqs';
 import { Bono } from './components/Bono';
+import { Footer } from './components/Footer';
 
 /* ─────────────────────────────────────────────
    Countdown — empiece en 14:59 como pide el brief
@@ -89,6 +90,7 @@ export default function App() {
       <Testimonials testimonials={ testimonials } />
       <Bono />
       <Faqs faqs={ faqs } />
+      <Footer />
     </Layout>
 
     {/* <div className="min-h-screen bg-bg text-main-text font-sans antialiased"> */}
@@ -335,8 +337,8 @@ export default function App() {
 
       {/* ── FOOTER ──────────────────────────────── */}
       {/* <footer className="py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center"> */}
-          {/* <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Asegura tu copia por <span className="text-primary">$9.99 USD</span>.
           </h2>
           <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
@@ -348,21 +350,21 @@ export default function App() {
           >
             ¡HAZ CLIC AQUÍ PARA ASEGURAR TU COPIA!
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a> */}
+          </a>
 
-          {/* <div className="mt-16 pt-8 border-t border-border text-xs text-zinc-600 space-y-3">
+          <div className="mt-16 pt-8 border-t border-border text-xs text-zinc-600 space-y-3">
             <div className="flex items-center justify-center gap-2">
               <Lock className="w-3 h-3" />
               <span>Pago procesado de forma segura por Hotmart</span>
-            </div> */}
-            {/* <div className="flex items-center justify-center gap-4 flex-wrap">
+            </div>
+            <div className="flex items-center justify-center gap-4 flex-wrap">
               <a href="#" className="hover:text-zinc-400 transition-colors">Política de Privacidad</a>
               <span className="text-zinc-700">·</span>
               <a href="#" className="hover:text-zinc-400 transition-colors">Términos de Servicio</a>
               <span className="text-zinc-700">·</span>
               <a href="#" className="hover:text-zinc-400 transition-colors">Soporte</a>
-            </div> */}
-            {/* <div className="pt-3 max-w-2xl mx-auto leading-relaxed">
+            </div>
+            <div className="pt-3 max-w-2xl mx-auto leading-relaxed">
               © 2026 Gol de Compra. Todos los derechos reservados. Esta guía no sustituye consejo
               médico profesional. Consulta a tu médico antes de iniciar cualquier actividad física
               si tienes lesiones previas. Hotmart es el procesador de pagos seguro; no almacena ni
