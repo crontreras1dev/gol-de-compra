@@ -20,6 +20,7 @@ import {
   BookOpen
 } from 'lucide-react'
 import { Faqs } from './components/Faqs';
+import { Bono } from './components/Bono';
 
 /* ─────────────────────────────────────────────
    Countdown — empiece en 14:59 como pide el brief
@@ -86,6 +87,7 @@ export default function App() {
       <Solution />
       <Benefits />
       <Testimonials testimonials={ testimonials } />
+      <Bono />
       <Faqs faqs={ faqs } />
     </Layout>
 
