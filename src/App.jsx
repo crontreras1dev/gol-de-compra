@@ -166,70 +166,6 @@ export default function App() {
         </div>
       </section> */}
 
-      {/* ── BENEFITS ────────────────────────────── */}
-      {/* <section className="border-b border-border py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="font-mono text-xs text-zinc-500">04 / Lo que aprendes</span>
-            <span className="h-px w-12 bg-border"></span>
-          </div>
-
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight max-w-3xl">
-            Lo que aprenderás para dominar la cancha sin riesgos.
-          </h2>
-
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5"> */}
-            {/* Featured card */}
-            {/* <div className="md:row-span-2 bg-card border border-border rounded-xl p-7 md:p-8 flex flex-col">
-              <Footprints className="w-8 h-8 text-primary mb-5" strokeWidth={1.5} />
-              <h3 className="font-display text-xl md:text-2xl font-bold mb-3">Biomecánica de Suelas</h3>
-              <div className="font-mono text-xs text-zinc-500 mb-4">FG · SG · AG · TF · IN</div>
-              <p className="text-zinc-300 leading-relaxed mb-auto">
-                Descifra la suela exacta para sintético 3G/4G, tierra o sala. Cada superficie tiene
-                un patrón de taco que impide que tu pie se trabe o resbale.
-              </p>
-              <div className="mt-6 pt-6 border-t border-border">
-                <div className="text-xs text-zinc-500">Incluye tabla comparativa</div>
-                <div className="text-sm text-zinc-300 mt-1">
-                  5 suelas × 5 superficies = 25 combinaciones resueltas
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-card border border-border rounded-xl p-7">
-              <FlaskConical className="w-7 h-7 text-secondary mb-4" strokeWidth={1.5} />
-              <h3 className="font-display text-lg font-bold mb-2">Cuero vs. Sintético</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Conoce la retención de peso, ajuste y absorción de agua de cada capellada antes de decidir.
-              </p>
-            </div>
-
-            <div className="bg-card border border-border rounded-xl p-7">
-              <DollarSign className="w-7 h-7 text-primary mb-4" strokeWidth={1.5} />
-              <h3 className="font-display text-lg font-bold mb-2">Gasto Inteligente por Gamas</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Descubre por qué la gama intermedia ($80–$160 USD) es el punto dulce perfecto.
-              </p>
-            </div>
-          </div> */}
-
-          {/* Full width card */}
-          {/* <div className="mt-5 bg-card border border-border rounded-xl p-7 md:p-8 flex flex-col md:flex-row md:items-center gap-6">
-            <ShieldCheck className="w-8 h-8 text-secondary shrink-0" strokeWidth={1.5} />
-            <div className="flex-1">
-              <h3 className="font-display text-lg font-bold mb-2">Reglas de Oro por Superficie</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Elecciones obligatorias y prohibiciones absolutas para evitar lesiones. Lo que se
-                puede y lo que nunca se debe hacer, en una sola hoja.
-              </p>
-            </div>
-            <div className="font-mono text-xs text-zinc-500 border-l border-border pl-6 hidden md:block leading-relaxed">
-              1 página<br/>imprimible
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* ── OFFER ───────────────────────────────── */}
       {/* <section id="oferta" className="border-b border-border py-16 md:py-24 scroll-mt-12">
         <div className="max-w-4xl mx-auto px-4">
@@ -322,20 +258,6 @@ export default function App() {
               </div>
             </div>
           </div>
-        </div>
-      </section> */}
-
-      {/* ── GUARANTEE ───────────────────────────── */}
-      {/* <section className="border-b border-border py-16 md:py-24">
-        <div className="max-w-2xl mx-auto px-4 text-center">
-          <ShieldCheck className="w-10 h-10 text-secondary mx-auto mb-6" strokeWidth={1.5} />
-          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
-            Garantía Incondicional de 7 Días
-          </h2>
-          <p className="text-zinc-400 leading-relaxed">
-            Prueba la guía, aplica los consejos y si sientes que no protegió tus piernas ni te ayudó
-            a ahorrar dinero, te devolvemos el 100% de tu inversión sin preguntas.
-          </p>
         </div>
       </section> */}
 
